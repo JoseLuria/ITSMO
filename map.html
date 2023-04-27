@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CIIT - Mapa</title>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDATIjygC9qtZYXmSJRbYpdnHPkSCouo6g&callback=initMap"
+      defer
+    ></script>
+    <link rel="stylesheet" href="/styles/map.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <aside class="map-slider">
+      <button class="slider-btn">
+        <img src="/assets/icons/arrows.png" alt="" />
+      </button>
+
+      <a class="navbar-btn" href="/advice.html">
+        <span class="navbar-text">
+          <img
+            class="navbar-btn-image"
+            src="/assets/icons/arrow.png"
+            alt="Arrow Icon"
+          />
+          Regresar
+        </span>
+      </a>
+
+      <a href="/index.html">
+        <img class="navbar-logo" src="/assets/logo.png" alt="Logo" />
+      </a>
+
+      <hr class="slider-line" />
+
+      <div class="slider-selectors">
+        <h2>Variables</h2>
+        <p>
+          Valore las variables por orden de importancia donde 1 es la
+          calificación más baja y 10 es la más alta.
+        </p>
+
+        <div class="slider-select">
+          Producción Agrícola
+          <div class="slider-icon">
+            <img src="/assets/icons/arrow-down.png" alt="Arrow Down" />
+          </div>
+        </div>
+
+        <div class="slider-select">
+          Precipitaciones
+          <div class="slider-icon">
+            <img src="/assets/icons/arrow-down.png" alt="Arrow Down" />
+          </div>
+        </div>
+
+        <div class="slider-select">
+          Competencia
+          <div class="slider-icon">
+            <img src="/assets/icons/arrow-down.png" alt="Arrow Down" />
+          </div>
+        </div>
+      </div>
+
+      <a href="map.html" class="select-btn">Enviar</a>
+
+      <hr class="slider-line" />
+    </aside>
+    <div id="map"></div>
+    <script src="/script/map.js"></script>
+  </body>
+</html>
