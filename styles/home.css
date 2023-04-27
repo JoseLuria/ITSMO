@@ -1,0 +1,129 @@
+@import url(./base.css);
+
+body {
+  min-height: 100svh;
+  background-image: url(/assets/backgrounds/bg-home.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+body:before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.navbar {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.navbar-logo {
+  height: 42px;
+}
+
+.navbar-btn {
+  position: relative;
+  color: white;
+  display: flex;
+}
+
+.navbar-text {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.navbar-btn:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  border-radius: 45px;
+  background: #aa9863;
+  width: 45px;
+  height: 45px;
+  z-index: -1;
+  transform: translateY(-50%);
+  transition-duration: 200ms;
+}
+
+.navbar-btn:hover:before {
+  width: 100%;
+}
+
+main {
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  color: #aa9863;
+  font-size: 34px;
+  max-width: 900px;
+  margin: 50px auto;
+}
+
+.home-footer {
+  display: flex;
+  flex-direction: column;
+  margin: auto 0 0;
+  background-color: rgba(0, 0, 0, 0.69);
+  padding: 4rem 2rem;
+  color: white;
+  text-align: center;
+  gap: 2rem;
+  align-items: center;
+  border-radius: 50px 50px 0 0;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+.home-icons {
+  display: flex;
+  gap: 5rem;
+}
+
+.home-icons img {
+  height: 70px;
+}
+
+p {
+  max-width: 1000px;
+}
+
+@media (min-width: 720px) {
+  h1 {
+    font-size: 64px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 70px;
+  }
+}
